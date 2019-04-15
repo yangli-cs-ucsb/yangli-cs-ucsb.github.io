@@ -1,0 +1,615 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yang Li's Homepage</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+              <script type="text/javascript">
+		    function toggle_visibility(id) {
+		       var e = document.getElementById(id);
+		       if(e.style.display == 'block')
+		          e.style.display = 'none';
+		       else if(e.style.display == 'none')
+		          e.style.display = 'block';
+		    }
+			
+			function jump_to_div(id) {
+		       var e = document.getElementById(id);
+		       e.scrollIntoView();
+		    }
+			
+			function close_div(id) {
+		       var e = document.getElementById(id);
+		       e.style.display = 'none';
+		    }
+			
+			function close_all_abstract() {
+		       close_div('kdd13_li');
+			   close_div('vldb13_li');
+			   close_div('tkde13_tan');
+			   close_div('kdd14_sun');
+			   close_div('lned');
+			   close_div('ade');
+			   close_div('kc');
+		    }
+		</script>
+		
+		<script type="text/javascript">
+  			var _gaq = _gaq || [];
+ 			_gaq.push(['_setAccount', 'UA-10652125-2']);
+  			_gaq.push(['_trackPageview']);
+  			(function() {
+    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  			})();
+		</script>
+
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+
+		[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]
+		[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]
+
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top" onclick="close_all_abstract();">About</a></li>
+					<li><a href="#education" onclick="close_all_abstract();">Education</a></li>
+					<li><a href="#research" onclick="close_all_abstract();">Research</a></li>
+                    <li><a href="#pubs" onclick="close_all_abstract();">Publications</a></li>
+					<li><a href="#work" onclick="close_all_abstract();">Work</a></li>
+					<li><a href="#contact" onclick="close_all_abstract();">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u">
+							<span class="image fit"><img src="images/yang.jpg" alt="" /></span>
+						</div>
+						<div class="8u">
+							<header>
+								<h1>Hi. I'm <strong>Yang Li</strong>.</h1>
+							</header>
+                            <p style="text-align:justify">I am currently a 5th year PhD student in the <a href="http://cs.ucsb.edu">Computer Science Department</a> at <a href="http://www.ucsb.edu">University of California, Santa Barbara</a>. My research interests are Automatic Knowledge Graph Construction, Natural Laguage Processing, Data Mining and Data Management. My advisor is <a href="http://cs.ucsb.edu/~xyan">Professor Xifeng Yan</a>.</p>
+							<a href="files/CV_Yang.pdf" class="button big scrolly">Curriculum Vitae</a>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Education -->
+			<div class="wrapper style2">
+				<article id="education">
+					<header>
+						<h2>Education</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box style1">
+									<a href="http://www.ucsb.edu" class="image"><img src="images/ucsb.jpg" alt="" /></a>
+									<h3><a href="http://www.ucsb.edu">UCSB</a></h3>
+									<h4>Ph.D. in Computer Science</h4>
+                                    <span>Sep. 2010 - Present</span>
+                                    <p>Santa Babara, CA</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+
+									<a href="http://www.zju.edu.cn/english/" class="image small"><img src="images/zju.png" alt="" /></a>
+									<h3><a href="http://www.zju.edu.cn/english/">ZJU</a></h3>
+									<h4>B.E. in Computer Science</h4>
+                                    <span>Sep. 2006 - Jun. 2010</span>
+                                    <p>Hangzhou, China</p>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<a href="http://www.ucla.edu" class="image small"><img src="images/ucla.png" alt="" /></a>
+									<h3><a href="http://www.ucla.edu">UCLA</a></h3>
+									<h4>Visiting Student</h4>
+                                    <span>Jul. 2009 - Sep. 2009</span>
+                                    <p>Los Angeles, CA</p>
+								</section>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Research -->
+			<div class="wrapper style3">
+				<article id="research">
+					<header>
+						<h2>Research Projects</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/ade.jpg" width="256" height="200" border="0" alt="" />
+									<h4>Acronym Disambiguation for Enterprises</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('ade');jump_to_div('ade');">[Abstract]</a>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/lned.jpg" width="256" height="200" border="0" alt="" />
+									<h4>Named Entity Disambiguation for Linkless Knowledge Bases</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('lned');jump_to_div('lned');">[Abstract]</a>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/mened.png" width="256" height="200" border="0" alt="" />
+									<h4>Mining Evidences for Named Entity Disambiguation</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('kdd13_li');jump_to_div('kdd13_li');">[Abstract]</a>
+								</section>
+							</div>
+						</div>
+						<div class="row">
+                            <div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/cn.png" width="256" height="200" border="0" alt="" />
+									<h4>Analyzing Expert Behaviors in Collaborative Network</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('kdd14_sun');jump_to_div('kdd14_sun');">[Abstract]</a>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/sv.jpg" width="249" height="200" border="0" alt="" />
+									<h4>Interpreting Public Sentiment Variations on Twitter</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('tkde13_tan');jump_to_div('tkde13_tan');">[Abstract]</a>
+								</section>
+							</div>
+							<div class="4u">
+								<section class="box style1">
+									<class="image"><img src="images/msp.png" width="256" height="200" border="0" alt="" />
+									<h4>Memory Efficient Minimum Substring Partitioning</h4>
+                                    <a style="cursor: pointer;" onclick="close_all_abstract();toggle_visibility('vldb13_li');jump_to_div('vldb13_li');">[Abstract]</a>
+								</section>
+							</div>
+						</div>
+					</div>
+					<footer>
+						<a href="#pubs" class="button big scrolly">See my related publications</a>
+					</footer>
+				</article>
+			</div>
+            
+            <!-- Pubs -->
+			<div class="wrapper wrapper-style3">
+				<article id="pubs">
+					<header>
+						<h2>Publications</h2>
+					</header>
+					<div class="container">
+						<div class="entry-content">
+							<ul align="justify">
+								<li>
+									<div><strong>Yang Li</strong>, Chi Wang, Fangqiu Han, Jiawei Han, Dan Roth and Xifeng Yan, "<strong>Mining Evidences for Named Entity Disambiguation</strong>", <em>Proc. of the 19th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'13)</em>, Chicago, IL, USA, Auguest 2013. <a style="cursor: pointer;" onclick="toggle_visibility('kdd13_li');">[Abstract]</a> <a href="paper/kdd13_li.pdf">[Paper]</a> <a href="#pubs">[Slides]</a> <a href="paper/kdd13_li_poster.pdf">[Poster]</a>
+                                    	<div id="kdd13_li" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Named entity disambiguation is the task of disambiguating
+                                           		named entity mentions in natural language text and link
+                                           		them to their corresponding entries in a knowledge base
+                                           		such as Wikipedia. Such disambiguation can help enhance
+                                           		readability and add semantics to plain text. It is also a
+                                           		central step in constructing high-quality information network
+                                           		or knowledge graph from unstructured text. Previous
+                                           		research has tackled this problem by making use of various
+                                           		textual and structural features from a knowledge base.
+                                           		Most of the proposed algorithms assume that a knowledge
+                                           		base can provide enough explicit and useful information to
+                                           		help disambiguate a mention to the right entity. However,
+                                           		the existing knowledge bases are rarely complete (likely will
+                                           		never be), thus leading to poor performance on short queries
+                                           		with not well-known contexts. In such cases, we need to collect
+                                           		additional evidences scattered in internal and external
+                                           		corpus to augment the knowledge bases and enhance their
+                                           		disambiguation power. In this work, we propose a generative
+                                           		model and an incremental algorithm to automatically
+                                           		mine useful evidences across documents. With a specific
+                                           		modeling of "background topic" and "unknown entities", our
+                                           		model is able to harvest useful evidences out of noisy information.
+                                           		Experimental results show that our proposed
+                                           		method outperforms the state-of-the-art approaches significantly:
+                                           		boosting the disambiguation accuracy from 43%
+                                           		(baseline) to 86% on short queries derived from tweets.
+												</p>
+                                        	</section>
+										</div>
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div><strong>Yang Li</strong>, Pegah Kamousi, Fangqiu Han, Shengqi Yang, Xifeng Yan and Subhash Suri, "<strong>Memory Efficient Minimum Substring Partitioning</strong>", <em>Proc. of the 39th Int. Conf. on Very Large Databases (VLDB'13)</em>, Riva del Garda, Trento, Italy, Auguest 2013. <a style="cursor: pointer;" onclick="toggle_visibility('vldb13_li');">[Abstract]</a> <a href="paper/vldb13_li.pdf">[Paper]</a> <a href="paper/vldb13_li_slides.pdf">[Slides]</a> <a href="http://ucsdnews.ucsd.edu/pressrelease/scientists_help_tame_tidal_wave_of_genomic_data_using_sdscs_emtrestles_em">[Press]</a>
+                                    	<div id="vldb13_li" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Massively parallel DNA sequencing technologies are revolutionizing
+                                           		genomics research. Billions of short reads generated
+                                           		at low costs can be assembled for reconstructing the
+                                           		whole genomes. Unfortunately, the large memory footprint
+                                           		of the existing de novo assembly algorithms makes it challenging
+                                           		to get the assembly done for higher eukaryotes like
+                                           		mammals. In this work, we investigate the memory issue of
+                                           		constructing de Bruijn graph, a core task in leading assembly
+                                           		algorithms, which often consumes several hundreds of gigabytes
+                                           		memory for large genomes. We propose a disk-based
+                                           		partition method, called Minimum Substring Partitioning
+                                           		(MSP), to complete the task using less than 10 gigabytes
+                                           		memory, without runtime slowdown. MSP breaks the short
+                                           		reads into multiple small disjoint partitions so that each
+                                           		partition can be loaded into memory, processed individually
+                                           		and later merged with others to form a de Bruijn graph.
+                                           		By leveraging the overlaps among the k-mers (substring of
+                                           		length k), MSP achieves astonishing compression ratio: The
+                                           		total size of partitions is reduced from Θ(kn) to Θ(n), where
+                                           		n is the size of the short read database, and k is the length
+                                           		of a k-mer. Experimental results show that our method can
+                                           		build de Bruijn graphs using a commodity computer for any
+                                           		large-volume sequence dataset.
+												</p>
+                                        	</section>
+										</div>
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div>Shulong Tan, <strong>Yang Li</strong>, Huan Sun, Ziyu Guan, Xifeng Yan, Jiajun Bu, Chun Chen and Xiaofei He, "<strong>Interpreting Public Sentiment Variations on Twitter</strong>", <em>Transactions on Knowledge and Data Engineering (TKDE'13)</em>, August 2013. <a style="cursor: pointer;" onclick="toggle_visibility('tkde13_tan');">[Abstract]</a> <a href="paper/tkde13_tan.pdf">[Paper]</a> 
+                                    	<div id="tkde13_tan" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Millions of users share their opinions on Twitter, making it a valuable platform for tracking and analyzing public
+                                           		sentiment. Such tracking and analysis can provide critical information for decision making in various domains. Therefore it has
+                                           		attracted attention in both academia and industry. Previous research mainly focused on modeling and tracking public sentiment.
+                                           		In this work, we move one step further to interpret sentiment variations. We observed that emerging topics (named foreground
+                                           		topics) within the sentiment variation periods are highly related to the genuine reasons behind the variations. Based on this
+                                           		observation, we propose a Latent Dirichlet Allocation (LDA) based model, Foreground and Background LDA (FB-LDA), to distill
+                                           		foreground topics and filter out longstanding background topics. These foreground topics can give potential interpretations of
+                                           		the sentiment variations. To further enhance the readability of the mined reasons, we select the most representative tweets for
+                                           		foreground topics and develop another generative model called Reason Candidate and Background LDA (RCB-LDA) to rank
+                                           		them with respect to their "popularity" within the variation period. Experimental results show that our methods can effectively find
+                                           		foreground topics and rank reason candidates. The proposed models can also be applied to other tasks such as finding topic
+                                           		differences between two sets of documents.
+												</p>
+                                        	</section>
+										</div>
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div>Huan Sun, Mudhakar Srivatsa, Shulong Tan, <strong>Yang Li</strong>, Lance Kaplan, Shu Tao and Xifeng Yan, "<strong>Analyzing Expert Behaviors in Collaborative Networks</strong>", <em>Proc. of the 20th ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD'14)</em>, New York, NY, USA, Auguest 2014. <a style="cursor: pointer;" onclick="toggle_visibility('kdd14_sun');">[Abstract]</a> <a href="paper/kdd14_sun.pdf">[Paper]</a> <a href="paper/kdd14_sun_slides.pdf">[Slides]</a> <a href="paper/kdd14_sun_poster.pdf">[Poster]</a>
+                                    	<div id="kdd14_sun" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Collaborative networks are composed of experts who cooperate
+                                           		with each other to complete specific tasks, such as
+                                           		resolving problems reported by customers. A task is posted
+                                           		and subsequently routed in the network from an expert to
+                                           		another until being resolved. When an expert cannot solve
+                                           		a task, his routing decision (i.e., where to transfer a task) is
+                                           		critical since it can significantly affect the completion time
+                                           		of a task. In this work, we attempt to deduce the cognitive
+                                           		process of task routing, and model the decision making of
+                                           		experts as a generative process where a routing decision is
+                                           		made based on mixed routing patterns.
+                                           		In particular, we observe an interesting phenomenon that
+                                           		an expert tends to transfer a task to someone whose knowledge
+                                           		is neither too similar to nor too different from his own.
+                                           		Based on this observation, an expertise difference based routing
+                                           		pattern is developed. We formalize multiple routing
+                                           		patterns by taking into account both rational and random
+                                           		analysis of tasks, and present a generative model to combine
+                                           		them. For a held-out set of tasks, our model not only
+                                           		explains their real routing sequences very well, but also accurately
+                                           		predicts their completion time. Under three different
+                                           		quality measures, our method significantly outperforms all
+                                           		the alternatives with more than 75% accuracy gain. In
+                                           		practice, with the help of our model, hypotheses on how to
+                                           		improve a collaborative network can be tested quickly and
+                                           		reliably, thereby significantly easing performance improvement
+                                           		of collaborative networks.
+												</p>
+                                        	</section>
+										</div> 
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div><strong>Yang Li</strong>, Shulong Tan, Huan Sun, Jiawei Han, Dan Roth and Xifeng Yan, "<strong>Entity Disambiguation for Linkless Knowledge Bases</strong>", <em>submitted to Proc. of the 24th International World Wide Web Conference (WWW'15)</em>, Florence, Italy, May 2015. <a style="cursor: pointer;" onclick="toggle_visibility('lned');">[Abstract]</a> <a href="#pubs">[Paper]</a>
+                                    	<div id="lned" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Named Entity Disambiguation is the task of disambiguating
+                                           		named entity mentions in natural language text and link
+                                           		them to their corresponding entries in a reference knowledge
+                                           		base (e.g. Wikipedia). Such disambiguation can help
+                                           		add semantics to plain text and distinguish homonymous
+                                           		entities. Previous research has tackled this problem by making
+                                           		use of two types of features from the reference knowledge
+                                           		base, namely, the context similarity and the topical coherence.
+                                           		Both features heavily rely on the cross-document
+                                           		hyperlinks within the knowledge base: the topical coherence
+                                           		feature is directly calculated from those hyperlinks,
+                                           		while the context similarity feature implicitly makes use of
+                                           		those hyperlinks to expand entity candidates' descriptions
+                                           		and then compares them against the query context. Unfortunately,
+                                           		cross-document hyperlinks are rarely available in
+                                           		many closed domain knowledge bases and it is very expensive
+                                           		to manually add such links. Therefore few algorithms
+                                           		can work well on linkless knowledge bases. In this work, we
+                                           		propose the challenging Named Entity Disambiguation with
+                                           		Linkless Knowledge Bases (LNED) problem and tackle it
+                                           		by leveraging the useful disambiguation evidences scattered
+                                           		across the reference knowledge base. We propose a generative
+                                           		model to automatically mine such evidences out of noisy
+                                           		information. The mined evidences can mimic the role of the
+                                           		missing links and help boost the LNED performance. Experimental
+                                           		results show that our proposed method substantially
+                                           		improves the disambiguation accuracy over the baseline approaches.
+												</p>
+                                        	</section>
+										</div> 
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div><strong>Yang Li</strong>, Bo Zhao, Ariel Fuxman and Xifeng Yan, "<strong>Artificial Intelligence or Asset Intelligence? Acronym Disambiguation for Enterprises</strong>", <em>submitted to Proc. of the 24th International World Wide Web Conference (WWW'15)</em>, Florence, Italy, May 2015. <a style="cursor: pointer;" onclick="toggle_visibility('ade');">[Abstract]</a> <a href="#pubs">[Paper]</a>
+                                    	<div id="ade" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		Acronyms are abbreviations formed from the initial components
+                                           		of words or phrases. In enterprises, people often use
+                                           		acronyms to make communication more efficient. However,
+                                           		acronyms could be difficult to understand for people who are
+                                           		not familiar with the subject matter, e.g. new employees,
+                                           		collaborators from other groups, etc., thereby affecting productivity.
+                                           		To alleviate such troubles, we study the acronym
+                                           		disambiguation problem in this paper, whose goal is to automatically
+                                           		resolve the true meanings of acronyms in given
+                                           		context. Acronym disambiguation for enterprises is challenging
+                                           		for several reasons. First, acronyms may be highly
+                                           		ambiguous as an acronym used in the enterprise may already
+                                           		have a different meaning outside the enterprise. To
+                                           		make matters worse, in large companies, acronyms could
+                                           		have multiple internal meanings too. Furthermore, there are
+                                           		rarely any dictionaries or knowledge bases such as Wikipedia
+                                           		available in enterprises, so the potential meanings (including
+                                           		expansions, popularity scores, context representations etc.)
+                                           		of the acronyms need to be mined from plain text. Finally,
+                                           		the system must work for every enterprise and it should
+                                           		not rely on any manually labeled data. In this work we
+                                           		propose a general end-to-end framework to tackle all these
+                                           		challenges. The framework takes the enterprise corpus as
+                                           		input and produce a high-quality acronym disambiguation
+                                           		system as output. Our disambiguation models are trained
+                                           		via distant supervised learning, without requiring any manually
+                                           		labeled training examples. Experimental results on Microsoft
+                                           		enterprise data show that our proposed method can
+                                           		effectively construct acronym/meaning repositories and accurately
+                                           		disambiguate acronyms to their genuine meanings
+                                           		with over 90% precision. Furthermore, our proposed framework
+                                           		can be easily deployed to any enterprises to support
+                                           		high-quality acronym disambiguation, without requiring any
+                                           		domain knowledge.
+												</p>
+                                        	</section>
+										</div> 
+									</div>
+									
+									<p><br\></br\></p>
+									
+									<div><strong>Yang Li</strong> and Xifeng Yan, "<strong>MSPKmerCounter: A Fast and Memory Efficient Approach for K-mer Counting</strong>", <em>submitted to the journal of Bioinformatics (Bioinformatics'15)</em>, 2015. <a style="cursor: pointer;" onclick="toggle_visibility('kc');">[Abstract]</a> <a href="paper/bio14_li.pdf">[Paper]</a> <a href="MSPKmerCounter/index.html">[Software]</a>
+                                    	<div id="kc" style="display: none;">
+                                    		<section class="box box-style1">
+												<p style="text-align:justify; ">
+                                           		A major challenge in next-generation genome sequencing (NGS) is to assemble massive overlapping short reads that are
+                                           		randomly sampled from DNA fragments. To complete assembling,
+                                           		one needs to finish a fundamental task in many leading assembly
+                                           		algorithms: counting the number of occurrences of k-mers (length-k 
+                                           		substrings in sequences). The counting results are critical for
+                                           		many components in assembly (e.g. variants detection and read
+                                           		error correction). For large genomes, the k-mer counting task can
+                                           		easily consume a huge amount of memory, making it impossible for
+                                           		large-scale parallel assembly on commodity servers.
+                                           		In this paper, we develop MSPKmerCounter, a disk-based
+                                           		approach, to efficiently perform k-mer counting for large genomes
+                                           		using a small amount of memory. Our approach is based on a novel
+                                           		technique called Minimum Substring Partitioning (MSP). MSP breaks
+                                           		short reads into multiple disjoint partitions such that each partition
+                                           		can be loaded into memory and processed individually. By leveraging 
+                                           		the overlaps among the k-mers derived from the same short
+                                           		read, MSP can achieve astonishing compression ratio so that the
+                                           		I/O cost can be significantly reduced. For the task of k-mer counting,
+                                           		MSPKmerCounter offers a very fast and memory-efficient solution.
+                                           		Experiment results on large real-life short reads data sets demon-
+                                           		strate that MSPKmerCounter can achieve better overall performance
+                                           		than state-of-the-art k-mer counting approaches.
+												</p>
+                                        	</section>
+										</div> 
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<footer>
+						<a href="http://scholar.google.com/citations?user=AkfRRDAAAAAJ&hl=en" class="button big scrolly">Google Scholar</a>
+					</footer>
+				</article>
+			</div>
+
+
+		<!-- Work -->
+			<div class="wrapper style3">
+				<article id="work">
+					<header>
+						<h2>Work Experience</h2>
+					</header>
+					<div class="container">
+						<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="http://research.microsoft.com/en-us/labs/siliconvalley/" class="image featured"><img src="images/msr.png" alt="" /></a>
+									<h3><a href="http://research.microsoft.com/en-us/labs/siliconvalley/">Microsoft Research</a></h3>
+									<h4>Research Intern</h4>
+                                    <span>Jun. 2014 - Sep. 2014</span>
+                                    <p>Mountain View, CA</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="https://www.apple.com/" class="image featured"><img src="images/apple.jpg" alt="" /></a>
+									<h3><a href="https://www.apple.com/">Apple Inc.</a></h3>
+									<h4>Research Intern</h4>
+                                    <span>Jun. 2013 - Sep. 2013</span>
+                                    <p>Cupertino, CA</p>
+								</article>
+							</div>
+							<div class="4u">
+								<article class="box style2">
+									<a href="http://www.microsoft.com/china/ard/en/groups.mspx" class="image featured"><img src="images/microsoft.jpg" alt="" /></a>
+									<h3><a href="http://www.microsoft.com/china/ard/en/groups.mspx">Microsoft China</a></h3>
+									<h4>Research Intern</h4>
+                                    <span>Dec. 2009 - Apr. 2010</span>
+                                    <p>Beijing, China</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<!--<footer>
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+					</footer>-->
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container small">
+					<header>
+						<h2>Contact Me</h2>
+					</header>
+					<div class="row">
+							<div class="4u">
+								<article class="box style2">
+									<a href="mailto:yangli@cs.ucsb.edu" class="image image-full"><img src="images/email.png" alt="" /></a>
+                                	<img src="images/emailaddr.jpg" width="170" height="23" alt=""> 
+                                </article>
+							</div>
+							<div class="4u">
+						  		<article class="box style2">
+									<a href="#contact" class="image image-full"><img src="images/phone.png" alt="" /></a>
+                                    <img src="images/phonenum.jpg" width="120" height="20" alt=""> 
+								</article>
+							</div>
+							<div class="4u">
+						  		<article class="box style2">
+									<a href="images/map.pdf" class="image image-full"><img src="images/lab.png" alt="" /></a>
+									<img src="images/labaddr.jpg" width="180" height="18" alt=""> 
+								</article>
+							</div>
+				  </div>
+					<div>
+
+						<!--<div class="row">
+							<div class="12u">
+								<form method="post" action="#">
+									<div>
+										<div class="row">
+											<div class="6u">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row double">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Clear Form" class="alt" /></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>-->
+						<div class="row">
+							<div class="12u">
+								<hr />
+								<h3>Find me on ...</h3>
+								<ul class="social">
+									<li><a href="http://www.facebook.com/yangli.cs" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="http://www.linkedin.com/profile?viewProfile=&key=91115883&authToken=9O-_&authType=NAME_SEARCH&locale=en_US&srchindex=1&srchid=7d03c0f3-5225-4c50-8090-96af331490f6-0&srchtotal=2&pvs=ps&goback=%2Efps_Yang+Li+Santa+Barbara_*1_*1_*1_*1_*1_*1_*51_*1_Y_*1_*1_*1_false_1_R_true_CC%2CN%2CI%2CG%2CPC%2CED%2CL%2CFG%2CTE%2CFA%2CSE%2CP%2CCS%2CF%2CDR_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                                    <li><a href="https://plus.google.com/112065435031385428341/" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+									<!--
+									<li><a href="#" class="icon fa-rss"><span>RSS</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span>Instagram</span></a></li>
+									<li><a href="#" class="icon fa-foursquare"><span>Foursquare</span></a></li>
+									<li><a href="#" class="icon fa-skype"><span>Skype</span></a></li>
+									<li><a href="#" class="icon fa-soundcloud"><span>Soundcloud</span></a></li>
+									<li><a href="#" class="icon fa-youtube"><span>YouTube</span></a></li>
+									<li><a href="#" class="icon fa-blogger"><span>Blogger</span></a></li>
+									<li><a href="#" class="icon fa-flickr"><span>Flickr</span></a></li>
+									<li><a href="#" class="icon fa-vimeo"><span>Vimeo</span></a></li>
+									-->
+								</ul>
+								<hr />
+							</div>
+						</div>
+					</div>
+					<footer>
+                    <img src="http://hitwebcounter.com/counter/counter.php?page=4943502&style=0025&nbdigits=4&type=page&initCount=1680" title="" Alt=""   border="0" >
+					<br/>
+					<h8>Visitors Since January 1, 2011</h8>
+                    <br/>
+                    <br/>
+						<ul id="copyright">
+							<li>&copy; 2014 <a href="index.html">Yang Li</a></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+
+	</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+	<!-- TemplateBeginEditable name="doctitle" -->
+	<title>OurCompany.com</title>
+	<!-- TemplateEndEditable -->
+<meta name="description" content="Designed and developed by Codify Design Studio - codifydesign.com" />
+		<link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+		<script language="JavaScript" type="text/javascript" src="../SpryAssets/SpryCollapsiblePanel.js"></script>
+		<link href="../SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+		<!-- TemplateBeginEditable name="head" -->
+		<!-- TemplateEndEditable -->
+	</head>
+	<body>
+		<div class="container"> 
+			<div class="bannerArea">			
+				<div class="toplogo"><a href="#"><img src="../images/banner_logo.gif" border="0" /></a></div>			
+			</div>
+			<div class="contentArea">
+				<div class="leftnavigation">
+					<a href="#" >Suspendisse id</a>
+					<a href="#" >Vestibulum aecenas interdum</a>
+					<a href="#" >Nec orci pretium</a>
+					<a href="#" >Praesent vitae ligula</a>
+					<a href="#" >Non consequat eros tempus leo</a>
+					<a href="#" >Mollis enim proin</a>
+					<a href="#" >Aliqu mam erat null</a>
+				</div>
+				<div class="contentleft"><!-- TemplateBeginEditable name="item 1" -->
+					<div class="contentbox"> <img src="../images/content_image_1.jpg" border="0" />
+						<div class="contenttype">
+							<h2>Landmark Name...</h2>
+							<p>City and Country</p>
+							<div id="CollapsiblePanel1" class="CollapsiblePanel">
+								<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+								<div class="CollapsiblePanelContent">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+								</div>
+							</div>
+						</div>
+						<br class="clear_both" />
+					</div>
+				<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="item 2" -->
+				<div class="contentbox"> <img src="../images/content_image_2.jpg" border="0" />
+					<div class="contenttype">
+						<h2>Landmark Name</h2>
+						<p>City and Country</p>
+						<div id="CollapsiblePanel2" class="CollapsiblePanel">
+							<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+							<div class="CollapsiblePanelContent">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							</div>
+						</div>
+					</div>
+					<br class="clear_both" />
+				</div>
+				<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="item 3" -->
+				<div class="contentbox"> <img src="../images/content_image_3.jpg" border="0" />
+					<div class="contenttype">
+						<h2>Landmark Name</h2>
+						<p>City and Country</p>
+						<div id="CollapsiblePanel3" class="CollapsiblePanel">
+							<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+							<div class="CollapsiblePanelContent">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore sed do eiusmod tempor incid idunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<br class="clear_both" />
+				</div>
+				<!-- TemplateEndEditable --></div>
+				<div class="contentright"><!-- TemplateBeginEditable name="item 4" -->
+					<div class="contentbox"> <img src="../images/content_image_4.jpg" border="0" />
+						<div class="contenttype">
+							<h2>Landmark Name</h2>
+							<p>City and Country</p>
+							<div id="CollapsiblePanel4" class="CollapsiblePanel">
+								<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+								<div class="CollapsiblePanelContent">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore Lagna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+							</div>
+						</div>
+						<br class="clear_both" />
+					</div>
+				<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="item 5" -->
+				<div class="contentbox"> <img src="../images/content_image_5.jpg" border="0" />
+					<div class="contenttype">
+						<h2>Landmark Name</h2>
+						<p>City and Country</p>
+						<div id="CollapsiblePanel5" class="CollapsiblePanel">
+							<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+							<div class="CollapsiblePanelContent">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+					<br class="clear_both" />
+				</div>
+				<!-- TemplateEndEditable --><!-- TemplateBeginEditable name="item 6" -->
+				<div class="contentbox"> <img src="../images/content_image_6.jpg" border="0" />
+					<div class="contenttype">
+						<h2>Landmark Name</h2>
+						<p>City and Country</p>
+						<div id="CollapsiblePanel6" class="CollapsiblePanel">
+							<div class="CollapsiblePanelTab" tabindex="0"><a href="#"><u>LEARN MORE</u></a></div>
+							<div class="CollapsiblePanelContent">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et Dolore magna aliqua.</p>
+							</div>
+						</div>
+					</div>
+					<br class="clear_both" />
+				</div>
+				<!-- TemplateEndEditable --></div>
+				<br class="clear_both" />
+			</div>
+		</div>
+		<div class="footerArea">
+			<div class="footercontent">
+				<div class="footernav"><a href="#" >Privacy Policy</a>  &bull;  <a href="#" >Contact Us</a>  &bull;  <a href="#" >Site Map</a></div>
+				<div class="copyright">&copy; 2009 Our Company.  All rights reserved.</div>
+			</div>
+		</div>
+		
+		<script language="JavaScript" type="text/javascript">
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", { contentIsOpen: false });
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel2", { contentIsOpen: false });
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel3", { contentIsOpen: false });
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel4", { contentIsOpen: false });
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel5", { contentIsOpen: false });
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel6", { contentIsOpen: false });
+		</script>
+	</body>
+</html>

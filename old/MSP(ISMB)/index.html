@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>An Efficient Partitioning Algorithm for De Novo Assembly</title>
+<style type="text/css">
+<!--
+  body {
+	color:black;
+	background-color:#3FF;
+	font-family:Arial,Veranda,Times New Roman, sans-serif;
+  }
+  a:link { color: blue; }
+
+  p.main {
+    margin-left: 2em;
+  }
+
+  ul.links {
+    margin-left: 3em;
+  }
+
+  ul.changes {
+    margin-left: 3em;
+  }
+
+  blockquote {
+    margin-left: 4em;
+  }
+-->
+</style>
+</head>
+<body>
+    
+<h2>An Efficient Partitioning Algorithm for <em>De Novo Assembly</em></h2>
+<p>&nbsp;</p>
+<h3>Overview</h3>
+<p>MSPCounter is a k-mer counter based on the minimum substring partitioning  technique. It will first partition the k-mers in DNA sequences into several  disjoint partitions and compress consecutive k-mers to reduce I/O cost. Then it  will count k-mers in each partition individually. Since each k-mer will appear  in one and only one partition, there is no need to merge the counting results  in different partitions later, which helps make MSPCounter a fast and  memory-efficient k-mer counter. MSPCounter is a command-line program that reads  DNA sequences in FASTA format. It outputs the k-mer counts in binary format, which can be converted into the readable text format using
+  the "Dump" command. Please refer to the manual below for more
+details.</p>
+<p>MSPGraphBuilder is a de  Bruijn graph constructor based on the minimum  substring partitioning technique. It will also first partition the k-mers in DNA  sequences into several disjoint partitions and compress consecutive k-mers to  reduce I/O cost. Then it will build unipaths in each partition individually. Finally  it will link these unipaths in all partitions to generate the global de Bruijn  graph. MSPGraphBuilder can significantly reduce the memory consumption since it  compresses k-mers on the unipaths in each partition first, before loading all  the partitions into memory. In contrast, the direct approach cannot do this  compression on the fly before loading all the k-mers into the memory. MSPGraphBuilder is a command-line program that reads  DNA sequences in FASTA format. It outputs the unipaths and the links among these unipaths in readable text format. Please refer to the manual below for more
+details.</p>
+<p>&nbsp;</p>
+<h3>Requirements</h3>
+<p><span class="main">Both MSPCounter and MSPGraphBuilder are in JAR (<em>Java Archive</em>) format and thus can run on both Linux and Windows platforms. </span></p>
+<p>&nbsp;</p>
+<h3>Downloads</h3>
+<p><span class="main"><a href="MSPCounter/MSPCounter.zip">MSPCounter V0.1</a></span>      </p>
+<p><span class="main"><a href="MSPCounter/MSPCounter.pdf">MSPCounter Manual (PDF)</a></span></p>
+<p><a href="MSPGraphBuilder/MSPGraphBuilder.zip">MSPGraphBuilder V0.1</a></p>
+<p><a href="MSPGraphBuilder/MSPGraphBuilder.pdf">MSPGraphBuilder Manual (PDF)</a></p>
+<p>&nbsp;</p>
+<h3>Changes</h3>
+<p><span class="main">Version 0.1 - This was the initial version used to run the experiments in the paper. </span></p>
+<p>&nbsp;</p>
+<p><!--=============================================--></p>
+<h3>Datasets</h3>
+<p> Budgerigar (bird): <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/BGI_illumina_data/">http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Parrot/BGI_illumina_data/</a></p>
+<p>Red tailed boa constrictor (snake): <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Snake/short_inserts/"> http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Snake/short_inserts/</a></p>
+<p> Lake Malawi cichlid (fish): <a href="http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Fish/">http://bioshare.bioinformatics.ucdavis.edu/Data/hcbxz0i7kg/Fish/</a></p>
+<p>Soybean: <a href="ftp://public.genomics.org.cn/BGI/soybean_resequencing/fastq/">ftp://public.genomics.org.cn/BGI/soybean_resequencing/fastq/</a></p>
+<p>&nbsp; </p>
+<h3>Contact</h3>
+<p><span class="main">For bugs or questions or comments write to yangli at cs dot ucsb dot edu</span>.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><!--=============================================--></p>
+<hr>
+Last modified: January 17, 2012.
+
+
+
+</body></html>

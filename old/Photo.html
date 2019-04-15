@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Photos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="description" content="Yang Li's photo" />
+		<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+		<script language="JavaScript" type="text/javascript" src="SpryAssets/SpryCollapsiblePanel.js"></script>
+		<link href="SpryAssets/SpryCollapsiblePanel.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10652125-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<meta charset="utf-8">
+<link href="index.css" type="text/css" rel="stylesheet" />
+<script src="index.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="container"> 
+			<div class="bannerArea">			
+				<div class="toplogo"><a href="index.html"><img src="images/banner_logo.gif" border="0" /></a></div>			
+			</div>
+			<div class="contentArea">
+				<!--<div class="leftnavigation">
+				  <p><a href="About me.html" >About me</a>
+				    <a href="Education.html" >Education</a>
+				    <a href="Research.html" >Research</a>
+				    <a href="Courses.html" >Courses</a>
+				    <a href="Pubs.html" >Publications</a>
+			      <a href="Awards.html" >Awards</a><a href="Photo.html" >Photo Gallery</a><a href="Useful links.html" >Useful links</a><a href="Contact me.html" >Contact me</a><a href="Friends.html" >My Friends</a><a href="Hobbies.html" >My Hobbies</a></p>
+</div>-->
+				<div class="contentright">
+					<div id="div1">
+    <ul id="ul1">
+        <li class="cur"><img src="http://cs.ucsb.edu/~yangli/photo/1.jpg" /></li>
+       <li class="right"><img src="http://cs.ucsb.edu/~yangli/photo/3.jpg" /></li>
+        <li class="right2"><img src="http://cs.ucsb.edu/~yangli/photo/4.jpg" /></li>
+	<li><img src="http://cs.ucsb.edu/~yangli/photo/6.jpg" /></li>
+       <li><img src="http://cs.ucsb.edu/~yangli/photo/7.jpg" /></li>
+	<li><img src="http://cs.ucsb.edu/~yangli/photo/9.jpg" /></li>
+	<li><img src="http://cs.ucsb.edu/~yangli/photo/11.jpg" /></li>
+    
+   </ul>
+	<div class="btn">
+
+
+
+		<a class="prev" href="javascript:;"></a>
+		<a class="next" href="javascript:;"></a>
+	</div>
+</div>
+			  </div>
+              
+				<br class="clear_both" />
+			</div>
+		</div>
+		<div class="footerArea">
+			<div class="footercontent">
+			  <div class="copyright">
+			    <p align="center"><a href="http://cs.ucsb.edu">  Computer Science</a> || <a href="http://www.engineering.ucsb.edu/">College of Engineering</a> || <a href="http://www.ucsb.edu/">UCSB Web Site Directory</a></p>
+			    <p align="center">Last Updated: May 27, 2013</p>
+			  </div>
+			</div>
+		</div>
+		
+		<!--<script language="JavaScript" type="text/javascript">
+			var cp1 = new Spry.Widget.CollapsiblePanel("CollapsiblePanel1", { contentIsOpen: false });
+		</script>-->
+       
+         <script language="javascript">
+    var Message={
+    set: function() {
+    var set=this.minbtn.status == 1?[0,1,'block',this.char[0],'minimize']:[1,0,'none',this.char[1],'restore'];
+    this.minbtn.status=set[0];
+    this.win.style.borderBottomWidth=set[1];
+    this.content.style.display =set[2];
+    this.minbtn.innerHTML =set[3]
+    this.minbtn.title = set[4];
+    this.win.style.top = this.getY().top;
+    },
+    close: function() {
+    this.win.style.display = 'none';
+    window.onscroll = null;
+    },
+    setOpacity: function(x) {
+    var v = x >= 100 ? '': 'Alpha(opacity=' + x + ')';
+    this.win.style.visibility = x<=0?'hidden':'visible';
+    this.win.style.filter = v;
+    this.win.style.opacity = x / 100;
+    },
+    show: function() {
+    clearInterval(this.timer2);
+    var me = this,fx = this.fx(0, 100, 0.1),t = 0;
+    this.timer2 = setInterval(function() {
+    t = fx();
+    me.setOpacity(t[0]);
+    if (t[1] == 0) {clearInterval(me.timer2) }
+    },10);
+    },
+    fx: function(a, b, c) {
+    var cMath = Math[(a - b) > 0 ? "floor": "ceil"],c = c || 0.1;
+    return function() {return [a += cMath((b - a) * c), a - b]}
+    },
+    getY: function() {
+    var d = document,b = document.body, e = document.documentElement;
+    var s = Math.max(b.scrollTop, e.scrollTop);
+    var h = /BackCompat/i.test(document.compatMode)?b.clientHeight:e.clientHeight;
+    var h2 = this.win.offsetHeight;
+    return {foot: s + h + h2 + 2+'px',top: s + h - h2 - 2+'px'}
+    },
+    moveTo: function(y) {
+    clearInterval(this.timer);
+    var me = this,a = parseInt(this.win.style.top)||0;
+    var fx = this.fx(a, parseInt(y));
+    var t = 0 ;
+    this.timer = setInterval(function() {
+    t = fx();
+    me.win.style.top = t[0]+'px';
+    if (t[1] == 0) {
+    clearInterval(me.timer);
+    me.bind();
+    }
+    },10);
+    },
+    bind:function (){
+    var me=this,st,rt;
+    window.onscroll = function() {
+    clearTimeout(st);
+    clearTimeout(me.timer2);
+    me.setOpacity(0);
+    st = setTimeout(function() {
+    me.win.style.top = me.getY().top;
+    me.show();
+    },600);
+    };
+    window.onresize = function (){
+    clearTimeout(rt);
+    rt = setTimeout(function() {me.win.style.top = me.getY().top},100);
+    }
+    },
+    init: function() {
+    function $(id) {return document.getElementById(id)};
+    this.win=$('msg_win');
+    var set={minbtn: 'msg_min',closebtn: 'msg_close',title: 'msg_title',content: 'msg_content'};
+    for (var Id in set) {this[Id] = $(set[Id])};
+    var me = this;
+    this.minbtn.onclick = function() {me.set();this.blur()};
+    this.closebtn.onclick = function() {me.close()};
+    this.char=navigator.userAgent.toLowerCase().indexOf('firefox')+1?['_','::','×']:['0','2','r'];
+    this.minbtn.innerHTML=this.char[0];
+    this.closebtn.innerHTML=this.char[2];
+    setTimeout(function() {
+    me.win.style.display = 'block';
+    me.win.style.top = me.getY().foot;
+    me.moveTo(me.getY().top);
+    },0);
+    return this;
+    }
+    };
+    Message.init();
+    </script>
+	</body>
+</html>
